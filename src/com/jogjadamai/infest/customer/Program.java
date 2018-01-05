@@ -28,7 +28,7 @@ public class Program {
     public static void main(String[] args) {
         Program.MainGUI = new MainGUI();
         Program.MainThread = new Thread(Program.MainGUI);
-        Program.MainThread.setName("Main Thread");
+        Program.MainThread.setName("Main Thread Customer");
         java.awt.EventQueue.invokeLater(Program.MainThread);
         Program.Controller = Customer.createInstance(Program.MainGUI);
         Program.Controller.onFirstRun();
